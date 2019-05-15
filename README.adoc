@@ -1,7 +1,10 @@
 = (Extremely) Basic Kafka Tutorial
 
-I wanted to find a super simple tutorial to learn the basics of Kafka but couldn't find one so this repository is my attempt to create one.
+This repository contains a super simple intro to Kafka tutorial.
+You will learn how to do two things:
 
+* Launch a Kafka broker locally using Docker
+* Connect to that Kafka broker using the `kafka-python` library and write to and read from a topic.
 
 == Launch Kafka
 
