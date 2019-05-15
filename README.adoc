@@ -6,6 +6,8 @@ You will learn how to do two things:
 * Launch a Kafka broker locally using Docker
 * Connect to that Kafka broker using the `kafka-python` library and write to and read from a topic.
 
+== Getting Started
+
 Let's get started!
 
 We're going to run a Docker compose template that launches 3 containers:
