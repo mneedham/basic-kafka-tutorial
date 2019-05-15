@@ -1,0 +1,9 @@
+= (Extremely) Basic Kafka Tutorial
+
+
+[source, bash]
+----
+docker-compose up
+----
+
+On another terminal window launch
