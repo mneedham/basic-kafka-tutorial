@@ -38,7 +38,8 @@ jupyter-tutorial |         http://(4a031e4b5326 or 127.0.0.1):8888/?token=7907fe
 Grab that URL and the token and open it in a web browser.
 Given the above output we'd navigate to http://localhost:8888/?token=7907fef53948168308c829d48d9978b8f9c475b7c621c7d1, but you'll need to replace the token with your own one.
 
-Once you've done that open `Kafka Tutorial.ipynb`
+Once you've done that open `Kafka Tutorial.ipynb` and go through that.
+The notebook installs a Python driver for Kafka, and then shows how to publish and consume a simple JSON message.
 
 == Thanks
 
