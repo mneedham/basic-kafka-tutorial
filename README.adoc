@@ -1,9 +1,31 @@
 = (Extremely) Basic Kafka Tutorial
 
+I wanted to find a super simple tutorial to learn the basics of Kafka but couldn't find one so this repository is my attempt to create one.
+
+
+== Launch Kafka
+
+On one terminal window run the following command to launch a Kafka broker:
 
 [source, bash]
 ----
 docker-compose up
 ----
 
-On another terminal window launch
+The broker is accessible locally at `localhost:9092`, which we'll use when we connect to Kafka.
+
+== Connect to Kafka
+
+On another terminal window run the following command to launch Jupyter:
+
+[source, bash]
+----
+pip install -r requirements && jupyter notebook
+----
+
+== Thanks
+
+* The Docker Compose template is based on one shared with me by https://twitter.com/santand84[Andrea Santurbano^].
+Andrea is the main author of https://github.com/neo4j-contrib/neo4j-streams[Neo4j Streams^], the Neo4j Kafka Integration.
+
+* The producer and consumer code in the notebooks is adapted from Adnan Siddiqi's https://towardsdatascience.com/getting-started-with-apache-kafka-in-python-604b3250aa05[Getting started with Apache Kafka in Python article^] and https://github.com/kadnan/Calories-Alert-Kafka[accompanying repository^].
