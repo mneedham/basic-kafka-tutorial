@@ -6,25 +6,39 @@ You will learn how to do two things:
 * Launch a Kafka broker locally using Docker
 * Connect to that Kafka broker using the `kafka-python` library and write to and read from a topic.
 
-== Launch Kafka
+Let's get started!
 
-On one terminal window run the following command to launch a Kafka broker:
+We're going to run a Docker compose template that launches 3 containers:
+
+* broker - our Kafka broker
+* zookeeper - used by Kafka for leader election
+* jupyter - notebooks for connecting to our Kafka broker
+
+Open a terminal window and run the following command:
 
 [source, bash]
 ----
 docker-compose up
 ----
 
-The broker is accessible locally at `localhost:9092`, which we'll use when we connect to Kafka.
+Near the beginning of the output you should see the following text:
 
-== Connect to Kafka
+```
+jupyter-tutorial | [I 10:35:27.804 NotebookApp] The Jupyter Notebook is running at:
+jupyter-tutorial | [I 10:35:27.804 NotebookApp] http://(4a031e4b5326 or 127.0.0.1):8888/?token=7907fef53948168308c829d48d9978b8f9c475b7c621c7d1
+jupyter-tutorial | [I 10:35:27.804 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+jupyter-tutorial | [C 10:35:27.811 NotebookApp]
+jupyter-tutorial |
+jupyter-tutorial |     To access the notebook, open this file in a browser:
+jupyter-tutorial |         file:///home/jovyan/.local/share/jupyter/runtime/nbserver-6-open.html
+jupyter-tutorial |     Or copy and paste one of these URLs:
+jupyter-tutorial |         http://(4a031e4b5326 or 127.0.0.1):8888/?token=7907fef53948168308c829d48d9978b8f9c475b7c621c7d1
+```
 
-On another terminal window run the following command to launch Jupyter:
+Grab that URL and the token and open it in a web browser.
+Given the above output we'd navigate to http://localhost:8888/?token=7907fef53948168308c829d48d9978b8f9c475b7c621c7d1, but you'll need to replace the token with your own one.
 
-[source, bash]
-----
-pip install -r requirements && jupyter notebook
-----
+Once you've done that open `Kafka Tutorial.ipynb`
 
 == Thanks
 
