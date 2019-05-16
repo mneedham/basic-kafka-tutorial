@@ -14,6 +14,13 @@ We're going to run a Docker compose template that launches 3 containers:
 * zookeeper - used by Kafka for leader election
 * jupyter - notebooks for connecting to our Kafka broker
 
+Clone this repository:
+
+[source, bash]
+----
+git@github.com:mneedham/basic-kafka-tutorial.git && cd basic-kafka-tutorial
+---
+
 Open a terminal window and run the following command:
 
 [source, bash]
