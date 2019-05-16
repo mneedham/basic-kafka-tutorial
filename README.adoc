@@ -19,7 +19,7 @@ Clone this repository:
 [source, bash]
 ----
 git@github.com:mneedham/basic-kafka-tutorial.git && cd basic-kafka-tutorial
----
+----
 
 Open a terminal window and run the following command:
 
